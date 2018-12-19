@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list_view_cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- 这里就是我们要使用的自定义拼音列表了，注意SideBar前面是你自己的包名，这里我的包名为：com.xqx.SideBarDemo-->
+        <com.myfittinglife.app.mycityselectdemo.view.SideBar
+            android:id="@+id/side_bar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_text_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#D2D2D2"
+        android:padding="10dp"
+        android:text="A"
+        android:textColor="#2DB7E1"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
